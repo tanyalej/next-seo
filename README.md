@@ -1,4 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Netlify static deployment
+
+Make sure to add these settings to the deployment pipeline:
+```
+base directory: empty
+build command: npm run build
+publish directory: out
+```
+
+Also this environment variable should be added:
+
+```
+NETLIFY_NEXT_PLUGIN_SKIP=true
+```
 
 ## Getting Started
 
