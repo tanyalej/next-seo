@@ -114,3 +114,9 @@
     flex-direction: column;
   }
 }
+
+.article {
+  border: #0070f3 solid 1px;
+  padding: 1rem;
+  margin-top: 2rem;
+}
