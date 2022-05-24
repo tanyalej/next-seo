@@ -1,9 +1,44 @@
 import Link from 'next/link'
+import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Core Web Vitals</title>
+        <meta name="description" content="Core Web Vitals are the subset of Web Vitals that apply to all web pages, should be measured by all site owners, and will be surfaced across all Google tools"/>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: `
+        {
+          "@context": "https://schema.org",
+          "@type": "NewsArticle",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://google.com/article"
+          },
+          "headline": "Core Web Vitals",
+          "image": [
+            "https://example.com/photos/1x1/photo.jpg",
+            "https://example.com/photos/4x3/photo.jpg",
+            "https://example.com/photos/16x9/photo.jpg"
+          ],
+          "datePublished": "2015-02-05T08:00:00+08:00",
+          "dateModified": "2015-02-05T09:20:00+08:00",
+          "author": {
+            "@type": "Person",
+            "name": "John Doe",
+            "url": "http://example.com/profile/johndoe123"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Google",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://google.com/logo.jpg"
+            }
+          }
+        }`}}/>
+      </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
@@ -23,11 +58,11 @@ export default function Home() {
           the following metrics (and their respective thresholds):
         </p>
 
-        <img src="https://web-dev.imgix.net/image/tcFciHGuF3MxnTr1y5ue01OGLBn2/ZZU8Z7TMKXmzZT2mCjJU.svg"></img>
+        <img width="350" height="400" alt="Largest Contentful Paint threshold recommendations" src="https://web-dev.imgix.net/image/tcFciHGuF3MxnTr1y5ue01OGLBn2/ZZU8Z7TMKXmzZT2mCjJU.svg"></img>
 
-        <img src="https://web-dev.imgix.net/image/tcFciHGuF3MxnTr1y5ue01OGLBn2/iHYrrXKe4QRcb2uu8eV8.svg"></img>
+        <img width="350" height="400" alt="First Input Delay threshold recommendations" src="https://web-dev.imgix.net/image/tcFciHGuF3MxnTr1y5ue01OGLBn2/iHYrrXKe4QRcb2uu8eV8.svg"></img>
 
-        <img src="https://web-dev.imgix.net/image/tcFciHGuF3MxnTr1y5ue01OGLBn2/dgpDFckbHwwOKdIGDa3N.svg"></img>
+        <img width="350" height="400" alt="Cumulative Layout Shift threshold recommendations" src="https://web-dev.imgix.net/image/tcFciHGuF3MxnTr1y5ue01OGLBn2/dgpDFckbHwwOKdIGDa3N.svg"></img>
 
         <ul>
           <li>
