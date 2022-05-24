@@ -48,7 +48,7 @@ export default function Home() {
         </ul>
 
         <p>
-          For each of the above metrics, to ensure you're hitting the recommended target for most 
+          For each of the above metrics, to ensure you&apos;re hitting the recommended target for most 
           of your users, a good threshold to measure is the 75th percentile of page loads, segmented 
           across mobile and desktop devices.
         </p>
