@@ -11,10 +11,17 @@ export default function Home() {
         
         <meta property="og:title" content="Core Web Vitals" />
         <meta property="og:description" content="Core Web Vitals are the subset of Web Vitals that apply to all web pages, should be measured by all site owners, and will be surfaced across all Google tools" />
+        <meta property="og:url" content="https://fakeurl.com/article/"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="https://web-dev.imgix.net/image/tcFciHGuF3MxnTr1y5ue01OGLBn2/ZZU8Z7TMKXmzZT2mCjJU.svg"/>
+
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@wizelineglobal" />
         <meta name="twitter:creator" content="@ederchrono" />
+        <meta property="twitter:domain" content="https://fakeurl.com/article"/>
+        <meta property="twitter:url" content="https://628d28e9f161140008515db6--next-seo.netlify.app/article/"/>
+        <meta name="twitter:image" content="https://web-dev.imgix.net/image/tcFciHGuF3MxnTr1y5ue01OGLBn2/ZZU8Z7TMKXmzZT2mCjJU.svg"/>
         
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html: `
         {
