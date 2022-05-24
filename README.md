@@ -12,7 +12,9 @@ node -v
 
 ## Getting Started
 
-First, install dependencies:
+First I'd recommend to fork this repo so that you get a copy you can push to.
+
+Then clone and install dependencies:
 
 ```bash
 npm i
@@ -45,13 +47,13 @@ For this next step I recommend using netlify to deploy our site in order to use 
 
 ### Netlify static deployment
 
-Create a new github repository and sync with your local repo.
+If you forked the repo skip this step, else create a new github repository and sync with your local repo.
 
 Connect netlify to your github account.
 
 Create a new netlify project choosing the github repo
 
-Make sure to add these settings to the deployment pipeline:
+Make sure to add these settings to the netlify deployment pipeline:
 ```
 base directory: empty
 build command: npm run build
