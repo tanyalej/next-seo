@@ -8,6 +8,14 @@ export default function Home() {
       <Head>
         <title>Core Web Vitals</title>
         <meta name="description" content="Core Web Vitals are the subset of Web Vitals that apply to all web pages, should be measured by all site owners, and will be surfaced across all Google tools"/>
+        
+        <meta property="og:title" content="Core Web Vitals" />
+        <meta property="og:description" content="Core Web Vitals are the subset of Web Vitals that apply to all web pages, should be measured by all site owners, and will be surfaced across all Google tools" />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@wizelineglobal" />
+        <meta name="twitter:creator" content="@ederchrono" />
+        
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html: `
         {
           "@context": "https://schema.org",
