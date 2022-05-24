@@ -118,3 +118,13 @@ When you audit your site at https://search.google.com/test/rich-results you shou
 
 
 ![Screen Shot 2022-05-24 at 3 25 48 p m](https://user-images.githubusercontent.com/247442/170127669-366bbfd8-badf-4b3d-b954-c2cbc72afb3a.png)
+
+## Example site
+
+If you need some hints here's the initial sate of the repo deployed to netlify:
+
+https://next-seo.netlify.app/article
+
+and the solution state of the same site can be consulted here
+
+https://solution--next-seo.netlify.app/article
