@@ -1,39 +1,9 @@
 import Link from 'next/link'
-import Meta from '../components/Meta'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Meta structuredData={{
-          "@context": "https://schema.org",
-          "@type": "NewsArticle",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://google.com/article"
-          },
-          "headline": "Core Web Vitals",
-          "image": [
-            "https://example.com/photos/1x1/photo.jpg",
-            "https://example.com/photos/4x3/photo.jpg",
-            "https://example.com/photos/16x9/photo.jpg"
-          ],
-          "datePublished": "2015-02-05T08:00:00+08:00",
-          "dateModified": "2015-02-05T09:20:00+08:00",
-          "author": {
-            "@type": "Person",
-            "name": "John Doe",
-            "url": "http://example.com/profile/johndoe123"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "Google",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://google.com/logo.jpg"
-            }
-          }
-        }} />
       <main className={styles.main}>
         <h1 className={styles.title}>
           Core Web Vitals
