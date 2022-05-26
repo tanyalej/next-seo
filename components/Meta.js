@@ -22,10 +22,13 @@ export default function Meta ({ title, keywords, description, image, structuredD
 			<meta name="twitter:description" content={description} />
 			<meta name="twitter:image" content={image} />
 
-			<script 
+			{ structuredData &&
+				<script 
 				type="application/ld+json" 
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData)}}
 			/>
+			}
+			
     </Head>
   )
 }
@@ -35,18 +38,4 @@ Meta.defaultProps = {
   keywords: 'next, seo',
   description: 'Get the latest news about next and seo',
 	image: 'https://web-dev.imgix.net/image/tcFciHGuF3MxnTr1y5ue01OGLBn2/ZZU8Z7TMKXmzZT2mCjJU.svg',
-	structuredData:   {
-		"@context": "https://schema.org/",
-		"@type": "NewsArticle",
-		"mainEntityOfPage": {
-			"@type": "WebPage",
-			"@id": "https://google.com/article"
-		},
-		"headline": "Next and SEO Newsgit",
-		"author": {
-			"@type": "Person",
-			"name": "Jane Doe"
-		},
-		"datePublished": "2022-05-23",
-	}
 }
